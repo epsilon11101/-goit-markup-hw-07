@@ -1,0 +1,68 @@
+.portafolio,
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.menu ul{
+    justify-content: center;
+}
+
+input[type="button"]{
+    width: auto;
+    height: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: .03em;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    background-color: inherit;
+     cursor: pointer;
+}
+
+
+
+input[type="button"]:hover{
+    background-color: var(--blue-color);
+    color: white;
+}
+
+.portafolio{
+    place-content: center;
+    margin-bottom: 50px;
+}
+
+.portafolio figure {
+    width: 370px;
+    height: 404px;
+    cursor: pointer;
+    text-align: left;
+    border: 1px solid #EEEEEE;
+    transition: all 0.8s;
+    
+}
+
+.portafolio figure:hover{
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.404);
+     transform: scale(1.1);
+}
+
+.portafolio figure img{
+        width: 370px;
+        height: 294px;
+        transition: all 1s;
+        object-fit: cover;
+    }
+
+.portafolio figure img:hover{
+    filter: grayscale(80%);
+    }
+
+.portafolio figcaption>p{
+    color: #757575;
+}
+
+
