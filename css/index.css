@@ -1,14 +1,5 @@
-.banner,
-.what_we_do>div,
-.our_team>ul{
-   display: flex; 
-   justify-content: center;
-}
 
-.what_we_do>div,
-.our_team>ul{
-flex-wrap: wrap;
-}
+
 
 .banner{
     background: white url('../images/webPage_images/banner.jpg') no-repeat fixed center/cover;
@@ -26,6 +17,14 @@ flex-wrap: wrap;
 
 width: 696px;
 }
+
+.card-image{
+    width: 270px;
+    height: 120px;
+}
+
+
+
 
 input[type="button"] {
     font-size: 20px;
@@ -46,10 +45,8 @@ input[type="button"]:hover {
 }
 
 
-.details-container{    
-    display: grid;
-    gap: 50px;
-    grid-template-columns: auto auto auto auto;
+.details-container{   
+    gap: 30px; 
     padding: 50px 200px;
     font-weight: 700;
     text-align: left;
@@ -70,38 +67,60 @@ p.description {
 }
 
 
-.what_we_do > div{
+.what_do_we_do{
     gap: 100px;
 }
 
-.what_we_do .grid-item img{
+.what_do_we_do img{
     width: 376.16px;
     height: 323.7px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.548);
 }
-
-.our_team{
-    background-color: #F5F4FA;
+.what_do_we_do li{
+    position: relative;
 }
-.our_team h2{
-    padding-top: 50px;
+.what_do_we_do div{
+    color: white;
+    background-color: #2f303ad2;
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+
+.what_do_we_do li{
+    transition: all 0.5s;
+    object-fit: cover;
+}
+
+.what_do_we_do li:hover{
+    transform: scale(1.1);
 }
 
 
 
 .our_team  figure{
     width: 270px;
-    height: 368px;
-    text-align: center;
-    background-color: white;
+    max-height: 428px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.548);
-    
+   position: relative;
 
 }
-
+.our_team ul{
+    color: #AFB1B8;
+    padding:0px; 
+    padding-bottom: 5px; 
+    margin-top: 10px; 
+    gap: 20px;
+}
+.our_team figcaption{
+    width: 100%;
+    gap: 20px;
+}
 .our_team figure img{
     width: 270px;
-    height: 260px;
     height: auto;
     transition: all 0.5s;
 }
@@ -113,25 +132,23 @@ p.description {
 }
 .our_team figure:hover{
     background-color: var(--darkcolor);
-    color: #2196F3;
+    color: white;
+}
+.our_team .fa-brands:hover{
+    color: var(--blue-color);
 }
 
-
-.our_team figcaption{
-    font-weight: 500;
-    size: 16px;
-    line-height: 18.75px;
-    letter-spacing: 3%;
-}
-figcaption > p{
+.our_team figcaption > p{
 color: #757575;
+position: absolute;
 }
 
-img{
-    transition: all 0.5s;
-    object-fit: cover;
+.clientes ul{
+    gap: 30px;
+    cursor: pointer;
 }
-img:hover{
-    transform: scale(1.1);
+
+.clientes ul img:hover{
+    fill: red;
 }
 

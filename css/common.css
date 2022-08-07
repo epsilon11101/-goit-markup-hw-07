@@ -27,6 +27,45 @@ ol {
      font-weight: 500px;
  }
 
+.center,
+.center-column,
+.top,
+.right,
+.bottom,
+.left,
+.space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-column{
+    flex-direction: column;
+}
+
+.top {
+    align-items: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.bottom {
+    align-items: flex-end;
+}
+
+.left-column,
+.left {
+    justify-content: flex-start;
+}
+
+.space{
+    justify-content: space-around;
+}
+
+ 
+
 
  h2 {
      text-align: center;
@@ -38,23 +77,12 @@ ol {
  .logo:hover {
      color: purple !important;
  }
- nav,
- nav ul,
- footer,
- .social-network ul{
-     display: flex;
-     flex-wrap: wrap;
- }
-nav{
-     padding: 30px;
-     justify-content: space-between;
-}
+
+
 
 
 nav ul{
         gap: 150px;
-        justify-content: center;
-        place-items: center;     
 }
 
 nav a:hover {
@@ -83,7 +111,6 @@ a[href^='tel'] {
 
 
 footer {
-    justify-content: left;
     color: white;
 }
 

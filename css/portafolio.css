@@ -1,13 +1,12 @@
-.portafolio,
-.menu ul{
-    display: flex;
+.portafolio{
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.menu ul{
-    justify-content: center;
+main section>ul {
+gap: 30px;
 }
+
 
 input[type="button"]{
     width: auto;
@@ -46,7 +45,6 @@ input[type="button"]:hover{
 }
 
 .portafolio figure:hover{
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.404);
      transform: scale(1.1);
 }
 
