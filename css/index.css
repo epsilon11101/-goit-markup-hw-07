@@ -23,8 +23,23 @@ width: 696px;
     height: 120px;
 }
 
+.container-svg{
+border: 1px #AFB1B8 solid;
+border-radius: 4px;
+width: 170px; 
+height: 81px; 
+}
+
+.svg-icon{
+  fill: #AFB1B8;
+  width: 62px;
+  height: 45px;
+}
 
 
+.svg-icon:hover {
+  fill: #03a9f4;
+}
 
 input[type="button"] {
     font-size: 20px;
