@@ -51,15 +51,18 @@ width: 696px;
 
 }
 
-.modal-container .modal-card::before{
-    content: "X";
+.modal-container .modal-card i{
+    content: "";
     position: absolute;
     top: 2%;
     left: 95%;
     cursor: pointer;
+    color: red;
 }
 
-
+.modal-hidden{
+    display: none;
+}
 
 
 
