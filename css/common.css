@@ -110,7 +110,6 @@ nav .nav-item a::after{
 nav .nav-item a[href^='#']::after{
     display: block;
     width: 100%;
-    
 }
 
 nav .nav-item a:not([href^='#'])::after{
