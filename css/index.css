@@ -85,7 +85,7 @@ height: 81px;
 }
 
 
-.svg-icon:hover {
+.svg-icon:hover{
   fill: #03a9f4;
 }
 
@@ -218,7 +218,6 @@ position: absolute;
     cursor: pointer;
 }
 
-.clientes ul img:hover{
-    fill: red;
-}
-
+.clientes ul li:hover{
+    border-color: var(--blue-color);
+} 
