@@ -39,14 +39,51 @@ input[type="button"]:hover{
     height: 404px;
     cursor: pointer;
     text-align: left;
-    border: 1px solid #EEEEEE;
-    transition: all 0.8s;
+    border: 1px solid #EEEEEE;    
+    position: relative;
+}
+
+.portafolio .img_overlay{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 75%;
+    background-color:#2195f3c8;
+    color: white;
+    text-align: center;
+    opacity: 0;
+}
+
+.portafolio .img_overlay p{
+    margin: 20px ;
+}
+
+
+.portafolio figure:hover .img_overlay{
+    animation: div_overlay 0.5s forwards  ease;
+
+}
+
+@keyframes div_overlay {
+0%{
+    height: 0;
+    top: 75%;
+    opacity: 0;
+
+}
+20%{
+    opacity: 1;
+}
+
+100%{
+    opacity: 1;
+    top: 0%;
+
+}
     
 }
 
-.portafolio figure:hover{
-     transform: scale(1.1);
-}
+
 
 .portafolio figure img{
         width: 370px;

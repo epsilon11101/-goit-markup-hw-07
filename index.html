@@ -20,15 +20,16 @@
 </head>
 
 <body>
+
     <!-- header section -->
     <header>
         <!-- nav section -->
         <nav class="space">
             <ul class="center">
                 <li><a href="#" class="logo">WebStudio</a></li>
-                <li><a href="#">Estudio</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="#">Contactos</a></li>
+                <li class="nav-item"><a href="#"">Estudio</a></li>
+                <li class=" nav-item"><a href="portafolio.html">Portafolio</a></li>
+                <li class="nav-item"><a href="contactos.html">Contactos</a></li>
 
             </ul>
             <ul class="right">
@@ -45,6 +46,23 @@
 
     <!-- main section -->
     <main>
+
+        <!-- modal section -->
+
+        <section class="center modal-container modal-hidden">
+
+            <div class="modal-card center-column">
+                <i class="fa-solid fa-square-xmark fa-bounce"></i>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia inventore fugit amet dicta
+                    consequatur soluta quam harum, dolorum sint tempore expedita perferendis iusto error enim ducimus
+                    perspiciatis maiores fuga nisi!
+                    Officiis distinctio consectetur laudantium minus ratione recusandae vero laboriosam voluptate quas
+                    ducimus quo similique maxime molestias autem quis rerum aperiam unde voluptatem, ipsa nemo omnis
+                    provident, est culpa iste! Cumque.</p>
+            </div>
+
+        </section>
+
         <!-- banner section -->
         <section class="banner center-column">
             <div>
@@ -123,7 +141,7 @@
             <ul class="center what_do_we_do">
                 <li>
                     <img src="./images/webPage_images/image1.jpg" alt="programming" width="300">
-                    <div class="center">
+                    <div class="center ">
                         <p>APLICACIONES DE ESCRITORIO</p>
                     </div>
                 </li>
@@ -284,6 +302,8 @@
 
         </section>
     </footer>
+
+    <script src="./scripts/modal.js"></script>
 </body>
 
 </html>
