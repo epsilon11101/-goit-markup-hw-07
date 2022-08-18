@@ -41,6 +41,7 @@ input[type="button"]:hover{
     text-align: left;
     border: 1px solid #EEEEEE;    
     position: relative;
+    overflow: hidden;
 }
 
 .portafolio .img_overlay{
@@ -51,38 +52,17 @@ input[type="button"]:hover{
     background-color:#2195f3c8;
     color: white;
     text-align: center;
-    opacity: 0;
+    transition: transform 250ms ease;
+    transform: translateY(135%);
 }
 
 .portafolio .img_overlay p{
     margin: 20px ;
 }
 
-
 .portafolio figure:hover .img_overlay{
-    animation: div_overlay 0.5s forwards  ease;
-
+     transform: translateY(0);
 }
-
-@keyframes div_overlay {
-0%{
-    height: 0;
-    top: 75%;
-    opacity: 0;
-
-}
-20%{
-    opacity: 1;
-}
-
-100%{
-    opacity: 1;
-    top: 0%;
-
-}
-    
-}
-
 
 
 .portafolio figure img{
