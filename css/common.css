@@ -4,7 +4,7 @@ body {
     box-sizing: border-box;
     font-family: var(--font);
     color: black;
-    background-color: #E5E5E5;
+    background-color: white;
 }
 
 ul,
@@ -26,6 +26,22 @@ ol {
      color: inherit;
      font-weight: 500px;
  }
+
+.container{
+    max-width: 1200px;
+    min-height: 80px;
+    margin: 25px auto;
+    background-color: red;
+
+}
+
+.container > *{
+    background-color: yellow;
+    margin: auto ;
+    padding-right: 50px;
+}
+
+
 
 .center,
 .center-column,
@@ -64,8 +80,6 @@ ol {
     justify-content: space-around;
 }
 
- 
-
 
  h2 {
      text-align: center;
@@ -74,22 +88,19 @@ ol {
      font-weight: 700;
      font-size: 36px;
  }
- .logo:hover {
-     color: purple !important;
- }
-
-
-
-
-nav ul{
-        gap: 150px;
+  
+header ul{
+        gap: 50px;        
 }
 
-nav a:hover {
+header a:hover {
     color: var(--blue-color);
 }
+.logo:hover {
+     color: purple ;
+ }
 
-nav .nav-item{
+header .nav-item{
     position: relative;
 }
 
