@@ -2,7 +2,8 @@
 
 
 .banner{
-    background: white url('../images/webPage_images/banner.jpg') no-repeat fixed center/cover;
+    background: black url('../images/webPage_images/banner.jpg') no-repeat fixed center/cover;
+
     color: white;
     font-weight: 900;
     font-size: 34px;
@@ -17,9 +18,11 @@
 .banner::before{
     position: absolute;
     content: "";
-    background-color: rgba(0, 0, 0, 0.289);
+    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     z-index: -1;
 }
 
@@ -64,31 +67,6 @@ width: 696px;
     display: none;
 }
 
-
-
-.card-image{
-    width: 270px;
-    height: 120px;
-}
-
-.container-svg{
-border: 1px #AFB1B8 solid;
-border-radius: 4px;
-width: 170px; 
-height: 81px; 
-}
-
-.svg-icon{
-  fill: #AFB1B8;
-  width: 62px;
-  height: 45px;
-}
-
-
-.svg-icon:hover{
-  fill: #03a9f4;
-}
-
 input[type="button"] {
     font-size: 20px;
     color: white;
@@ -108,55 +86,92 @@ input[type="button"]:hover {
 }
 
 
-.details-container{   
+.details-container{       
     gap: 30px; 
-    padding: 50px 200px;
     font-weight: 700;
     text-align: left;
     cursor: default;
+    margin-top: 89px;
+    margin-bottom: 99px;
+    max-width: 1170px;
+
+    
 }
 
+.card{
+    width: 270px;
+    height: 251px;
+    background-color: purple;
+    justify-content: stretch;
+}
 
-.details-container b:hover {
-    color: #757575;
+.card-image{
+ background-color: #F5F4FA;
+ width: 270px;
+ height: 120px;
+}
+
+.card-content{
+    background-color: white;
+    min-height: 150px;
+    
+}
+
+.card-image img{
+    max-width: 70px;
+    max-height: 70px;
 }
 
 p.description {
     color: #757575;
     font-weight: 400px;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 24px;
     letter-spacing: 3%;
 }
-
+.details-container b:hover {
+    color: #757575;
+}
 
 .what_do_we_do{
-    gap: 100px;
+    max-width: 1170px;    
+}
+.what_do_we_do h2{
+    margin-bottom: 52px;
 }
 
-.what_do_we_do img{
-    width: 376.16px;
-    height: 323.7px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.548);
-}
-.what_do_we_do li{
+ .what_do_we_do_container{
     position: relative;
+    max-height: 294px;
+    max-width: 370px;
+ }
+
+.what_do_we_do ul{
+    gap: 30px;
 }
-.what_do_we_do div{
+
+
+.what_do_we_do img{
+    width: 370px;
+    height: 294px;
+    
+} 
+
+.what_do_we_do_container div{
     color: white;
     background-color: #2f303ad2;
     position: absolute;
     top: 80%;
-    width: 100%;
+    width: 370px;
     height: 20%;
     text-align: center;
     transition: height 0.5s  , top 0.5s;
 
 }
 
-.what_do_we_do div:hover{
+.what_do_we_do .what_do_we_do_container  div:hover{
   top: 0%;
-  height: 100%;
+  height: 100%
 }
 
 
@@ -165,59 +180,101 @@ p.description {
     object-fit: cover;
 }
 
-.what_do_we_do li:hover{
+/* .what_do_we_do li:hover{
     transform: scale(1.1);
+} */
+
+.our-team-container{
+ margin-top: 94px;
+ background-color: #F5F4FA;
+ max-width: 1280px;
+ max-height: 708px;
+}
+.our-team-container h2{
+    padding-top: 94px;
+    padding-bottom: 54px;
 }
 
+.our_team_div{
+    max-width: 1170px;
+    max-height: auto;
+    display: inline-flex;
+    justify-content: center;
+}
 
+.our_team{
+    gap:30px
+}
 
 .our_team  figure{
-    width: 270px;
-    max-height: 428px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.548);
-   position: relative;
+    max-width: 270px;
+    height: 428px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: white;
+    margin: 0 0;
+    margin-bottom: 90px;
 
 }
-.our_team ul{
-    color: #AFB1B8;
-    padding:0px; 
-    padding-bottom: 5px; 
-    margin-top: 10px; 
-    gap: 20px;
-}
-.our_team figcaption{
-    width: 100%;
-    gap: 20px;
-}
-.our_team figure img{
+
+
+.our_team figure div img{
     width: 270px;
-    height: auto;
+    height: 260px;
     transition: all 0.5s;
 }
 
-.our_team figure img:hover{
-        border-radius: 50%;
-        width: 80%;
-        margin-top: 10%;
+.our_team figcaption {
+    width: 100%;
+    height: 38.4%;
 }
-.our_team figure:hover{
-    background-color: var(--darkcolor);
-    color: white;
-}
-.our_team .fa-brands:hover{
-    color: var(--blue-color);
+.our_team figcaption div h4{
+margin: 0 0px;
 }
 
-.our_team figcaption > p{
-color: #757575;
-position: absolute;
+.our_team figcaption ul{
+    color: #AFB1B8;
+    gap: 10px;
+    font-size: 8px;
+    margin-top: 16px;
+
 }
+
+.our_team figcaption div > p{
+color: #757575;
+
+}
+
+.fa-stack .fa { color: white; }
+.fa-stack .fa.fa-circle-thin { color: white; }
+.fa-stack .fa.fa-circle { opacity:0.0; color: #03a9f4; }
+.fa-stack:hover .fa.fa-circle-thin { color: #03a9f4; }
+.fa-stack:hover .fa.fa-circle { opacity:1.0 }
+.fa-brands:hover {color: white;}
+
+
+
+
+
 
 .clientes ul{
+
+    margin-top: 59px;
+    margin-bottom: 151px;
     gap: 30px;
     cursor: pointer;
 }
 
-.clientes ul li:hover{
-    border-color: var(--blue-color);
-} 
+
+.container-svg{
+border: 1px #AFB1B8 solid;
+border-radius: 4px;
+width: 170px; 
+height: 81px; 
+}
+
+.svg-icon{
+  fill: #AFB1B8;
+  width: 62px;
+  height: 45px;
+}
