@@ -58,13 +58,54 @@
         <section class="center modal-container modal-hidden">
 
             <div class="modal-card center-column">
-                <i class="fa-solid fa-square-xmark fa-bounce"></i>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia inventore fugit amet dicta
-                    consequatur soluta quam harum, dolorum sint tempore expedita perferendis iusto error enim ducimus
-                    perspiciatis maiores fuga nisi!
-                    Officiis distinctio consectetur laudantium minus ratione recusandae vero laboriosam voluptate quas
-                    ducimus quo similique maxime molestias autem quis rerum aperiam unde voluptatem, ipsa nemo omnis
-                    provident, est culpa iste! Cumque.</p>
+                <i class="fa-solid fa-circle-xmark fa-bounce"></i>
+                <h3>Deje sus datos, nos contactaremos con usted</h3>
+                <form action="" name="contacto" class="container center-column">
+
+                    <label class="center-left">
+                        <p class="label">Username</p>
+                        <div class="form-icon">
+                            <input type="text" name="username" />
+                            <span class="input-icon"><i class="fa-solid fa-user"></i></span>
+
+                        </div>
+
+                    </label>
+
+
+                    <label class="center-left">
+                        <p>Telefóno</p>
+                        <div class="form-icon">
+                            <input type="tel" name="phone" autofocus />
+                            <span class="input-icon"><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                    </label>
+
+                    <label class="center-left">
+                        <p>E-mail</p>
+                        <div class="form-icon">
+                            <input type="email" name="email" autofocus />
+                            <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+                        </div>
+
+                    </label>
+
+                    <label class="center-left">
+                        <p>Comentarios</p>
+                        <textarea name="feedback" rows="15" placeholder="Introduzca el texto"></textarea>
+
+                    </label>
+
+                    <label class="center">
+                        <input type="checkbox" name="message" value="ok" checked />
+                        <p>Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</p>
+                    </label>
+
+
+                    <button type="submit">Enviar</button>
+
+                </form>
             </div>
 
         </section>

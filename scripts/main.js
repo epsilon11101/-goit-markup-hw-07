@@ -12,7 +12,7 @@ btn_modal.addEventListener('click', closeModal);
 modal_close_button.addEventListener('click', closeModal);
 
     let svg_container = document.querySelectorAll('.container-svg');
-    let svg_icon = document.querySelectorAll('.svg-icon');
+
     
     svg_container.forEach(e => {
 
@@ -26,9 +26,8 @@ modal_close_button.addEventListener('click', closeModal);
                 e.style.border = '1px #AFB1B8 solid';
                 e.children[0].style.fill = '#AFB1B8';
         }
-        );
-
-
-        
+        );        
     });
+
+
 })();
