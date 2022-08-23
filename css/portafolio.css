@@ -7,6 +7,10 @@ main section>ul {
 gap: 30px;
 }
 
+.menu{
+    margin-top: 94px;
+}
+
 
 input[type="button"]{
     width: auto;
