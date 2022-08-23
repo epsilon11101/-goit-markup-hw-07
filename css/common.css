@@ -8,6 +8,13 @@ body {
 
 
 }
+input,textarea{
+  border: none; 
+}
+
+input:focus ,textarea:focus{
+  outline: none 
+}
 
 ul,
 ol {
