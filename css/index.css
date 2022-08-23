@@ -67,7 +67,6 @@ width: 696px;
     display: none;
 }
 
-
 input[type="button"] {
     font-size: 20px;
     color: white;
@@ -266,6 +265,7 @@ color: #757575;
     cursor: pointer;
 }
 
+
 .container-svg{
 border: 1px #AFB1B8 solid;
 border-radius: 4px;
@@ -278,6 +278,3 @@ height: 81px;
   width: 62px;
   height: 45px;
 }
-
-
-
