@@ -183,28 +183,66 @@ footer {
     color: white;
     width: 1600px;
     height: 252px;
-    gap: 0px;
 }
 footer .footer-container{
     padding-top: 60px;
     width: 1170px;
-    gap: 150px;
+    gap: 86px;
+    justify-content: flex-start;
+    align-items: flex-start;
+
 }
 
 
 
 footer address,
-.icons div{
+.footer-icons div
+{
     width: 231px;
     height: 95px;
-    
+
 }
-.icons div{
-    margin-top: -10px;
+.footer-suscription form{
+    width: 570px;
+    height: 85px;
 }
 
-.icons  h4{
 
+
+.footer-suscription button[type='submit']{
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.footer-suscription button[type='submit'] .svg-icon{
+    fill: white;
+    position: absolute;
+    left: 80%;
+    top: 20%;
+
+}
+
+.footer-suscription input{
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    padding: 15px 15px 15px 15px;
+}
+
+.footer-suscription form p{
+    margin-top: 0px;
+}
+
+.footer-icons  h4{
     margin-top: 0px;
 }
 
@@ -215,18 +253,25 @@ footer address ul{
 }
 
 
-footer .icons{
+footer .footer-icons{
     width: 204px;
     height: 48px;
 }
-footer  .icons ul{
+footer  .footer-icons ul{
     font-size: 12px;
     color:white
 }
 
 
-.icons .fa-stack .fa.fa-circle-thin { color: var(--darkcolor); }
-.icons .fa-stack .fa.fa-circle { opacity:0.0; color:var(--blue-color); }
-.icons .fa-stack:hover .fa.fa-circle-thin { color:var(--blue-color); }
-.icons .fa-stack:hover .fa.fa-circle { opacity:1.0 }
-.icons .fa-brands:hover {color: white;}
+.footer-icons .fa-stack .fa.fa-circle-thin { color: var(--darkcolor); }
+.footer-icons .fa-stack .fa.fa-circle { opacity:0.0; color:var(--blue-color); }
+.footer-icons .fa-stack:hover .fa.fa-circle-thin { color:var(--blue-color); }
+.footer-icons .fa-stack:hover .fa.fa-circle { opacity:1.0 }
+.footer-icons .fa-brands:hover {color: white;}
+
+
+.svg-icon{
+  fill: #AFB1B8;
+  width: 62px;
+  height: 45px;
+}

@@ -130,6 +130,19 @@ border-radius: 4px;
 color:white;
 }
 
+
+.modal-container input:focus,
+.modal-container textarea:focus{
+    border: 1px solid #2196F3;
+}
+
+input:focus ~ span.input-icon .fa-solid {
+    color: #2196F3;
+}
+
+
+/* Banner  */
+
 input[type="button"] {
     font-size: 20px;
     color: white;
@@ -146,16 +159,6 @@ input[type="button"]:hover {
     background-color: var(--darkcolor);
     color: var(--blue-color);
     cursor: pointer;
-}
-
-
-.modal-container input:focus,
-.modal-container textarea:focus{
-    border: 1px solid #2196F3;
-}
-
-input:focus ~ span.input-icon .fa-solid {
-    color: #2196F3;
 }
 
 /* details  */
@@ -347,8 +350,3 @@ width: 170px;
 height: 81px; 
 }
 
-.svg-icon{
-  fill: #AFB1B8;
-  width: 62px;
-  height: 45px;
-}
