@@ -263,9 +263,9 @@ footer  .footer-icons ul{
 
 
 .footer-icons .fa-stack .fa.fa-circle-thin { color: var(--darkcolor); }
-.footer-icons .fa-stack .fa.fa-circle { opacity:0.0; color:var(--blue-color); }
+.footer-icons .fa-stack .fa.fa-circle { opacity:1; color:rgba(255, 255, 255, 0.1);}
 .footer-icons .fa-stack:hover .fa.fa-circle-thin { color:var(--blue-color); }
-.footer-icons .fa-stack:hover .fa.fa-circle { opacity:1.0 }
+.footer-icons .fa-stack:hover .fa.fa-circle { opacity:1.0; color:var(--blue-color);}
 .footer-icons .fa-brands:hover {color: white;}
 
 
