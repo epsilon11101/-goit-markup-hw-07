@@ -1,0 +1,279 @@
+
+@import 'variables';
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $brand_font_family;
+    color: map-get($brand_colors,'text-main-color');
+    background-color: map-get($brand_colors,'background-color');
+}
+
+input,textarea{
+    border: none;
+    &:focus{
+        outline: none;
+    }
+}
+ul,ol{
+    list-style: none;
+    margin:0; padding: 0; border:0;
+}
+
+a{
+    all:unset
+ }
+
+.svg-icon{
+  fill: map-get($brand_colors,'svg-color');
+  width: 62px;
+  height: 45px;
+}
+
+ @mixin justify($content) {
+    justify-content: $content;
+ }
+ @mixin align-items($align){
+    align-items: $align;
+ }
+
+
+ .center,.center-column,
+ .top,.right,.bottom,.left,.space,.bottom,
+ .left-column{
+    display: flex;
+    @include justify(center);
+    @include align-items(center);
+ }
+
+ .left-column{
+    @include align-items(flex-start);
+ }
+
+ .left-column,
+.center-column{
+    flex-direction: column;
+}
+
+.top{
+    @include align-items(flex-start);
+}
+
+.right {
+    @include justify(flex-end);
+}
+
+.bottom {
+    @include align-items(flex-end);
+}
+
+.left-column,
+.left {
+    @include justify(flex-start);
+}
+
+.space{
+    @include justify(space-around);
+}
+
+ h2 {
+     text-align: center;
+     line-height: 42.19px;
+     letter-spacing: 3%;
+     font-weight: 700;
+     font-size: 36px;
+ }
+
+
+.container{
+    max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo {
+    font-family: 'Raleway',
+    sans-serif;
+    color: map-get($brand_colors,'primary-blue');
+    font-size: 26px;
+    font-weight: bolder;
+    line-height: 31px;
+    transition: all 0.5s;
+    &:hover{
+        color: map-get($brand_colors,'logo-hover-color') ;
+    }
+}
+
+
+
+header{
+    margin: 25px auto;
+
+    & ul{
+        gap: 50px;
+    }
+
+    & a:hover{
+        color: map-get($brand_colors,'primary-blue');
+    }
+
+    & nav{
+        & .nav-item{
+            position: relative;
+            & a{
+
+                &::after{
+                        display: none;
+                        content: "";
+                        height: 4px;
+                        background-color: #2196F3;
+                        position: absolute;
+                        top: 250%;
+                        left: 0%;
+                        border-radius: 2px;
+                        transition: width 0.5s ease;
+                }
+
+
+                &[href^='#']::after{
+                        display: block;
+                        width: 100%;
+                }
+
+                &:not([href^='#'])::after{
+                        display: block;
+                         width: 0%;
+                }
+
+                &[href^='#']:hover::after{
+                    width: 0%;
+                }
+                
+                &:not([href^='#']):hover::after{
+                    width: 100%;;
+                }
+            }
+        }
+    } 
+}
+
+.banner,
+footer {
+    background-color:map-get($brand_colors,'primary-gray');
+}
+    
+
+a[href^='mailto'],
+a[href^='tel'] {
+    color: map-get($brand_colors,'link-main-color');
+}
+
+footer{
+    color: white;
+    height: 252px;
+    & .footer-container{
+        padding-top: 60px;
+        width: 1170px;
+        gap: 86px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    
+            & .footer-address address, .footer-icons div{
+                width: 231px;
+                height: 95px;
+
+            }
+
+            & .footer-address {
+                & address {
+                    & ul{
+                        margin-top: 6px;
+                        gap:9px;
+                    }
+                }
+            }
+
+
+            & .footer-suscription{
+                & form{
+                    width: 570px;
+                    height: 85px;
+                    & p{
+                        margin-top: 0px;
+                    }
+                }
+
+                & button[type='submit']{
+                    width: 200px;
+                    height: 50px;
+                    background: map-get($brand_colors,'primary-blue');
+                    box-shadow: 0px 4px 4px rgba(map-get($brand_colors,'text-main-color'), 0.15);
+                    border-radius: 4px;
+                    color: map-get($brand_colors,'background-color');
+                    text-align: center;
+                    position: relative;
+
+                    & .svg-icon{
+                            fill: map-get($brand_colors,'background-color');
+                            position: absolute;
+                            left: 80%;
+                            top: 20%;
+                    }
+                }
+
+                input{
+                    width: 358px;
+                    height: 50px;
+                    border: 1px solid rgba( map-get($brand_colors,'background-color'), 0.3);
+                    filter: drop-shadow(0px 4px 4px rgba(map-get($brand_colors,'text-main-color'), 0.15));
+                    border-radius: 4px;
+                    background-color: transparent;
+                    color:  map-get($brand_colors,'background-color');
+                    padding: 15px 15px 15px 15px;
+                }
+
+            }
+
+            & .footer-icons{
+                    width: 204px;
+                    height: 48px;
+                    
+                    & ul{
+                            font-size: 12px;
+                            color:map-get($brand_colors,'background-color');
+                    }
+
+                    & h4{
+                        margin-top: 0px;
+                    }
+
+                    & .fa-stack {
+                        & .fa{
+                            &.fa-circle-thin{
+                                color: map-get($brand_colors,'primary-gray');
+                            }
+                            &.fa-circle{
+                                 opacity:1;
+                                 color:rgba(map-get($brand_colors,'background-color'), 0.1);
+                            }
+                        }
+                        &:hover{
+                            & .fa{
+                                &.fa-circle-thin{
+                                    color:map-get($brand_colors,'primary-blue');
+                                }
+                                &.fa-circle{
+                                    opacity:1;
+                                    color:map-get($brand_colors,'primary-blue');
+                                }
+                            }
+                        }
+                    }
+
+                    
+            }
+        }
+
+}
