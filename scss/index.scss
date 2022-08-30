@@ -1,0 +1,348 @@
+@import 'variables';
+
+.banner{
+    background: map-get($brand_colors,'text-main-color') url('../images/webPage_images/banner.jpg') no-repeat fixed center/cover;
+    color: map-get($brand_colors,'background-color');
+    font-weight: 900;
+    font-size: 34px;
+    letter-spacing: 6%;
+    height: 600px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    &::before{
+        position: absolute;
+        content: "";
+        background-color: rgba(map-get($brand_colors,'text-main-color'), 0.4);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    &div{
+        width: 696px;
+    }
+}
+
+
+.modal-container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(map-get($brand_colors,'text-main-color'), 0.189);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    top:0;
+
+    & .modal-card{
+        position: relative;
+        top:2%;
+        left: 1%;
+        max-width: 528px;
+        height: 581px;
+        background-color: map-get($brand_colors,'background-color');
+        border-radius: 20px;
+        padding: 20px; 
+
+        & .fa-circle-xmark {
+            content: "";
+            position: absolute;
+            top: 2%;
+            left: 95%;
+            cursor: pointer;
+            color: map-get($brand_colors,'primary-blue');
+        }
+    }
+
+        & form{
+            & label{
+                gap: 15px;
+                & p {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    letter-spacing: 0.01em;
+                    color: #757575;
+                }
+                
+            }
+
+            & input, textarea{
+                    width: 448px;
+                    height: 40px;
+                    border: 1px solid rgba(33, 33, 33, 0.2);
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    padding: 15px 15px 15px 35px;
+                    &:focus{
+                         border: 1px solid #2196F3;
+                    }
+            }
+
+            & textarea{
+                height: 120px;
+                padding:  3px 3px; 
+            }
+
+            & .form-icon{
+                position: relative; 
+            }
+
+            & .input-icon{
+                color: rgba(33, 33, 33, 0.2);
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: 25%;
+                left: 2%;
+                z-index: 10;
+            }
+            & input{
+                &[type="checkbox"]{
+                    width: 16px;
+                    height: 15px;
+                    margin-left: 54px;    
+                }
+                &[type="submit"]{
+                    width: 200px;
+                    height: 50px;
+                    background: #188CE8;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                    border-radius: 4px;
+                    color:white;                    
+                }
+
+                &:focus ~ span.input-icon {
+                    & .fa-solid{
+                        color: #2196F3;
+                    }
+                }
+            }
+        }
+    
+}
+
+.modal-hidden{
+    display: none;
+}
+
+
+::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+
+input[type="button"]{
+    font-size: 20px;
+    color: white;
+    background-color: map-get($brand_colors,'primary-blue');
+    border-radius: 4px;
+    width: 261px;
+    height: 50px;
+    border: solid 2px map-get($brand_colors,'primary-blue');
+    transition: all 1s;
+
+    &:hover{
+            background-color: map-get($brand_colors,'primary-gray');
+            color: map-get($brand_colors,'primary-blue');
+            cursor: pointer;
+    }
+}
+
+.details-container{
+    gap: 30px; 
+    font-weight: 700;
+    text-align: left;
+    cursor: default;
+    margin-top: 89px;
+    margin-bottom: 99px;
+    max-width: 1170px;   
+
+
+    & .card{
+        width: 270px;
+        height: 251px;
+        justify-content: stretch;
+
+        & .card-image{
+            background-color: #F5F4FA;
+            width: 270px;
+            height: 120px;
+
+            & img{
+                max-width: 70px;
+                max-height: 70px;
+            }
+        }
+
+    }
+
+    & .card-content{
+        background-color: white;
+        min-height: 150px;
+
+        & p.description{
+            color: #757575;
+            font-weight: 400px;
+            font-size: 13px;
+            line-height: 24px;
+            letter-spacing: 3%;
+
+        }
+    }
+
+    & b:hover{
+        color: #757575;
+    }
+}
+
+
+.what_do_we_do{
+    max-width: 1170px;    
+
+    & h2{
+        margin-bottom: 52px;
+    }
+    &  .what_do_we_do_container{
+    position: relative;
+    max-height: 294px;
+    max-width: 370px;
+
+        & img{
+            width: 370px;
+            height: 294px;
+        }
+
+        & div{
+            color: white;
+            background-color: #2f303ad2;
+            position: absolute;
+            top: 80%;
+            width: 370px;
+            height: 20%;
+            text-align: center;
+            transition: height 0.5s  , top 0.5s;
+            
+            &:hover{
+                  top: 0%;
+                  height: 100%
+            }
+        }
+    }
+
+    & ul{
+        gap: 30px;
+    }
+
+    & li {
+     transition: all 0.5s;
+     object-fit: cover;       
+    }
+}
+
+
+.our-team-container{
+ margin-top: 94px;
+ background-color: #F5F4FA;
+ max-height: 708px;   
+  & h2{
+    padding-top: 94px;
+    padding-bottom: 54px;    
+  }
+
+  & .our_team_div{
+        max-width: 1170px;
+        max-height: auto;
+        display: inline-flex;
+        justify-content: center;
+
+        & .our_team{
+            gap:30px;
+
+            & figure{
+                max-width: 270px;
+                height: 428px;
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+                border-radius: 0px 0px 4px 4px;
+                background-color: white;
+                margin: 0 0;
+                margin-bottom: 90px;      
+                & div img{
+                    width: 270px;
+                    height: 260px;
+                    transition: all 0.5s;                   
+                }   
+                
+                & figcaption{
+                    width: 100%;
+                    height: 38.4%;   
+                    
+                    & div {
+                        & h4{
+                            margin: 0 0px;
+                        }
+                        &> p{
+                            color: #757575;
+                        }
+                    }
+
+                    & ul{
+                        color: #AFB1B8;
+                        gap: 10px;
+                        font-size: 8px;
+                        margin-top: 16px;                       
+                    }
+                }
+            }
+        }
+  }
+}
+
+.fa-stack{
+    .fa{
+        color: white;
+        &.fa-circle-thin{
+            color: white;
+        }
+        &.fa-circle { opacity:0.0; color: #03a9f4; }
+
+    }
+    &:hover{
+        .fa{
+            &.fa-circle-thin { color: #03a9f4; }
+            &.fa.fa-circle { opacity:1.0 }
+        }
+    }
+}
+
+.fa-brands:hover {color: white;}
+
+.clientes{
+    & ul{
+
+    margin-top: 59px;
+    margin-bottom: 151px;
+    gap: 30px;
+    cursor: pointer;
+    }
+    & .container-svg{
+        border: 1px #AFB1B8 solid;
+        border-radius: 4px;
+        width: 170px; 
+        height: 81px; 
+    }
+} 
+
+
