@@ -1,0 +1,50 @@
+header{
+    margin: 25px auto;
+
+    & ul{
+        gap: 50px;
+    }
+
+    & a:hover{
+        color: map-get($brand_colors,'primary-blue');
+    }
+
+    & nav{
+        & .nav-item{
+            position: relative;
+            & a{
+
+                &::after{
+                        display: none;
+                        content: "";
+                        height: 4px;
+                        background-color: #2196F3;
+                        position: absolute;
+                        top: 250%;
+                        left: 0%;
+                        border-radius: 2px;
+                        transition: width 0.5s ease;
+                }
+
+
+                &[href^='#']::after{
+                        display: block;
+                        width: 100%;
+                }
+
+                &:not([href^='#'])::after{
+                        display: block;
+                         width: 0%;
+                }
+
+                &[href^='#']:hover::after{
+                    width: 0%;
+                }
+                
+                &:not([href^='#']):hover::after{
+                    width: 100%;;
+                }
+            }
+        }
+    } 
+}
