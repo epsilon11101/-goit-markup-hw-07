@@ -9,3 +9,11 @@ $brand_colors:(
 );
 
 $brand_font_family: Roboto,sans-serif;
+
+
+ @mixin justify($content) {
+    justify-content: $content;
+ }
+ @mixin align-items($align){
+    align-items: $align;
+ }
